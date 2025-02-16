@@ -1,0 +1,32 @@
+{
+  "name": "AI IMAGE GEN",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.0",
+    "prisma": "^6.3.1",
+    "turbo": "^2.4.2",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.2.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@fal-ai/client": "^1.2.3",
+    "@prisma/client": "6.3.1",
+    "@types/express": "^5.0.0",
+    "bun": "^1.2.2",
+    "express": "^4.21.2"
+  }
+}
